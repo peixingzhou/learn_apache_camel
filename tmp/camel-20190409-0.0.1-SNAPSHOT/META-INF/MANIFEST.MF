@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Implementation-Title: camel-20190409
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: Administrator
+Implementation-Vendor-Id: com.danielpei.learn
+Spring-Boot-Version: 2.1.4.RELEASE
+Main-Class: org.springframework.boot.loader.WarLauncher
+Start-Class: com.danielpei.learn.camel20190409.Camel20190409Applicatio
+ n
+Spring-Boot-Classes: WEB-INF/classes/
+Spring-Boot-Lib: WEB-INF/lib/
+Created-By: Apache Maven 3.3.9
+Build-Jdk: 1.8.0_181
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/camel-20190409
+
