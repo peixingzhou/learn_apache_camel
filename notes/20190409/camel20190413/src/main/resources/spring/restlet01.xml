@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <beans xmlns="http://www.springframework.org/schema/beans"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xmlns:camel="http://camel.apache.org/schema/spring"
+           xsi:schemaLocation="
+	   http://camel.apache.org/schema/spring http://camel.apache.org/schema/spring/camel-spring.xsd
+	   http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+        <bean id="product" class="com.sguess.camel.camel20190413.processor.RestletProcessor" />
+
+        <camelContext id="restCamelContext" xmlns="http://camel.apache.org/schema/spring">
+
+            <restConfiguration bindingMode="auto" contextPath="" component="restlet" port="3387"/>
+
+            <rest path="/api">
+                <!-- 访问路径 http://127.0.0.1:3387/api/products -->
+                <get uri="/products" >
+                    <to uri="direct:products" />
+                </get>
+            </rest>
+
+            <route>
+                <from uri="direct:products" />
+                <to uri="bean:product?method=parameter" />
+            </route>
+
+        </camelContext>
+</beans>
