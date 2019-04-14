@@ -6,7 +6,8 @@
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
-        <option value="$PROJECT_DIR$/camel20190413/pom.xml" />
+        <option value="$PROJECT_DIR$/../learn20190414/pom.xml" />
+        <option value="$PROJECT_DIR$/../20190414springboot/pom.xml" />
       </list>
     </option>
   </component>

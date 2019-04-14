@@ -6,18 +6,24 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="camel-20190413" />
+        <module name="20190414springboot" />
+        <module name="learn20190414" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="20190414mvnyoutube" target="1.7" />
+      <module name="20190414springboot" target="1.8" />
       <module name="camel-20190413" target="1.8" />
       <module name="camel20190409" target="1.8" />
+      <module name="learn20190414" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="20190414springboot" options="-parameters" />
       <module name="camel-20190413" options="-parameters" />
       <module name="camel20190409" options="-parameters" />
+      <module name="learn20190414" options="-parameters" />
     </option>
   </component>
 </project>
